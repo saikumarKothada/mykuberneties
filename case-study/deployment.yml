@@ -19,4 +19,4 @@ spec:
          - name: my-cont
            image: httpd
            ports:
-             containerPort: 8080
+             - containerPort: 8080
