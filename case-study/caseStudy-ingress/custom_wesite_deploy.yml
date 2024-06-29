@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
-  name: custom_wesite
+  name: customWebsite
   labels:
-    app: custom_website
+    app: customWebsite
 spec:
   replicas: 2
   selector: 
    matchLabels:
-     app: custom_image
+     app: customWebsite
   template:
     metadata: 
        name: custom-pod
        labels:
-         app: custom_image
+         app: customWebsite
     spec:
       containers:
          - name: custom-cont
