@@ -8,12 +8,12 @@ spec:
   replicas: 2
   selector: 
    matchLabels:
-     app: my-apache2
+     app: apache2
   template:
     metadata: 
        name: my-pod
        labels:
-         app: my-apache2
+         app: apache2
     spec:
       containers:
          - name: apache-cont
