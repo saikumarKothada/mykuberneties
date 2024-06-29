@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: custom_wesite
+  labels:
+    app: custom_website
+spec:
+  replicas: 2
+  selector: 
+   matchLabels:
+     app: custom_image
+  template:
+    metadata: 
+       name: custom-pod
+       labels:
+         app: custom_image
+    spec:
+      containers:
+         - name: custom-cont
+           image: saikumar97058/custom-apache2
+           ports:
+             - containerPort: 8080
