@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: apache2-svc
   labels:
-    app: apache2-svc
+    app: apache2
 spec:
   ports:
     - port: 80
